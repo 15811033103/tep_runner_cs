@@ -3,7 +3,7 @@
     <el-form ref="form" :model="form" label-width="80px">
       <el-row type="flex" justify="center">
         <el-col :span="5">
-          <el-form-item label="用户名">
+          <el-form-item label="用户名22">
             <el-input v-model="form.name"></el-input>
           </el-form-item>
         </el-col>
