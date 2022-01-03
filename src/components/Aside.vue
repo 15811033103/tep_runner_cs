@@ -10,7 +10,7 @@
             <el-menu-item index="2" router @click="project">
                 <el-icon><icon-menu /></el-icon>
 
-                <span>项目管理</span>
+                <span>项目管理1</span>
             </el-menu-item>
 
             <el-menu-item index="3" router @click="env">
