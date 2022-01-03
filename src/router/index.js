@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '../layout/Layout.vue'
 import login from "../views/Login";
-import home2 from "../views/home2";
+import home2 from "../views/ProjectPage";
 
 const routes = [
   {
@@ -11,14 +11,19 @@ const routes = [
     redirect:"login",
     children:[
       {
-        path:"home",
-        name:'home',
-        component:() => import("@/views/Home"),
+        path:"case",
+        name:'case',
+        component:() => import("@/views/CasePage"),
       },
       {
-        path:"home2",
-        name: "home2",
-        component:() => import("../views/home2"),
+        path:"project",
+        name: "project",
+        component:() => import("../views/ProjectPage"),
+      },
+      {
+        path: "env",
+        name: "env",
+        component: () => import("../views/EnvPage"),
       }
     ]
   },
